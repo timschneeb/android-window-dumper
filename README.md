@@ -18,3 +18,7 @@ Alternatively, you can also use [LayoutInspectorV2](https://github.com/CoXier/La
 java -jar ./build/libs/android-window-dumper-*-SNAPSHOT-all.jar
 ```
 The app runs in Linux environments and requires `adb` and `unzip` to be installed and accessible in `$PATH`.
+
+### Known issues
+
+The app currently attaches a full-screen screenshot to each `.li` file, instead of just capturing the bounds of the window. This isn't an issue in most cases except for overlays or some system UIs like the statusbar.
