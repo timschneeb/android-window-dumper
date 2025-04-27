@@ -3,3 +3,12 @@ plugins {
 }
 rootProject.name = "android-window-dumper"
 
+buildscript {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath("gradle.plugin.com.github.johnrengelman:shadow:7.1.2")
+    }
+}
